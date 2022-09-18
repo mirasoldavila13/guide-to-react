@@ -1,4 +1,5 @@
-<!-- with React and ReactDOOM to create React elements then use ReactDOM to render those elements on the page-->
+<!-- To create React elements, and render them to the page we need to include React and ReactDOM
+React for creating the elements and ReactDOM for rendering those elements to the page-->
 <body>
     <div id="root"></div>
     <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
@@ -6,8 +7,8 @@
     <script type="text/javascript">
         const rootElement = document.getElementById('root')
         const element = React.createElement('div', {
-             className: 'container',
-             children: ['Hello World', ', Goodbye World']
+            children: React.createElement ('span', null, 'Hello', ' World'),
+            className: 'container',
         })
          ReactDOM.render(element, rootElement)
      </script>
