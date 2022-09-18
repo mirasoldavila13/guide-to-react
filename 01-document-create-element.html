@@ -1,0 +1,16 @@
+<!-- Create a user interface in JS, going to need to have a place to append the JS-generated DOM elements.
+    get access to that element from the document API. create our own element,
+    add properties to the elend then append that element with the rootElement--> >
+<body>
+    <div id="root"> </div>
+    <script type="text/javascript">
+        //access to div
+        const rootElement = document.getElementById('root')
+        //create element
+        const element = document.createElement('div')
+        element.textContent = 'Hello World'
+        element.className = 'container'
+        //append an element
+        rootElement.appendChild(element)
+    </script>
+</body>
